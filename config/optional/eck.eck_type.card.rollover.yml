@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.card
+name: Rollover
+type: rollover
+description: 'Components display by default. Then, if you hover over this item, other components display instead! Fully configurable, of course.'

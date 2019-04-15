@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.attachment
+name: SEO
+type: seo
+description: 'Fields that another entity can use to keep metatag tokenized while still providing the desired configuration options.'

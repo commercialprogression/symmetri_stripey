@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Blockquote
+type: blockquote
+description: 'Rich text, but rendered to look like a blockquote or "pull quote".'

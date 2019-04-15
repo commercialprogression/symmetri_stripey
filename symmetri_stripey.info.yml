@@ -1,0 +1,23 @@
+name: Symmetri Stripey
+type: module
+description: 'A large collection of entities to support the Symmetri stripey system.'
+core: 8.x
+dependencies:
+  - drupal:admin_toolbar
+  - drupal:eck
+  - drupal:field_group
+  - drupal:linked_field
+  - drupal:entity_browser
+  - drupal:linkit
+  - drupal:inline_entity_form
+  - drupal:entity_browser_entity_form
+  - drupal:chosen_field
+  - drupal:entity_reference_display
+  - drupal:address
+  - drupal:entityqueue
+  - drupal:redirect
+  - drupal:search_api
+  - drupal:menu_link_attributes
+  - drupal:field_formatter_class
+  - drupal:bg_image_formatter
+  - drupal:svg_image

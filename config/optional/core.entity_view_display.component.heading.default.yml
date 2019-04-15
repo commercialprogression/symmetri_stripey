@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.heading
+    - field.field.component.heading.field_heading
+    - field.field.component.heading.field_style_color
+    - field.field.component.heading.field_style_fontweight
+    - field.field.component.heading.field_style_headinglevel
+    - field.field.component.heading.field_style_logo
+    - field.field.component.heading.field_style_text_transform
+  module:
+    - compro_custom
+id: component.heading.default
+targetEntityType: component
+bundle: heading
+mode: default
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: heading_default
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_color: true
+  field_style_fontweight: true
+  field_style_headinglevel: true
+  field_style_logo: true
+  field_style_text_transform: true
+  uid: true

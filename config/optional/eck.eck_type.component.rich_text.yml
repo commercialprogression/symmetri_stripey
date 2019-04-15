@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: 'Rich text'
+type: rich_text
+description: 'A WYSIWYG editor you can put text into. Lets you make lists and bold text and all kinds of stuff.'

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Heading
+type: heading
+description: 'h1 through h6 elements, for consistent text styles and a good document outline.'

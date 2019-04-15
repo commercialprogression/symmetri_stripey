@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.rich_text
+    - field.field.component.rich_text.field_longtext
+    - field.field.component.rich_text.field_style_color
+    - field.field.component.rich_text.field_style_fontweight
+    - field.field.component.rich_text.field_style_paragraph
+    - field.field.component.rich_text.field_style_text_transform
+  module:
+    - text
+id: component.rich_text.default
+targetEntityType: component
+bundle: rich_text
+mode: default
+content:
+  field_longtext:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_color: true
+  field_style_fontweight: true
+  field_style_paragraph: true
+  field_style_text_transform: true
+  uid: true

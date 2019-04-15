@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.story
+    - field.storage.section.field_longtext
+  module:
+    - text
+id: section.story.field_longtext
+field_name: field_longtext
+entity_type: section
+bundle: story
+label: Story
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

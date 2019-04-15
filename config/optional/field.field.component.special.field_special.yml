@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.special
+    - eck.eck_type.special.form
+    - eck.eck_type.special.view
+    - field.storage.component.field_special
+id: component.special.field_special
+field_name: field_special
+entity_type: component
+bundle: special
+label: Special
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:special'
+  handler_settings:
+    target_bundles:
+      form: form
+      view: view
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: form
+field_type: entity_reference

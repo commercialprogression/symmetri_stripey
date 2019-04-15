@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.story
+    - field.storage.section.field_customer_job_title
+id: section.story.field_customer_job_title
+field_name: field_customer_job_title
+entity_type: section
+bundle: story
+label: 'Customer job title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

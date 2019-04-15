@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: component.small
+label: Small
+targetEntityType: component
+cache: true

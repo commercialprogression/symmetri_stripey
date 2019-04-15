@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.list
+    - field.storage.component.field_longtext_multiple
+  module:
+    - text
+id: component.list.field_longtext_multiple
+field_name: field_longtext_multiple
+entity_type: component
+bundle: list
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.accordion
+    - field.storage.component.field_attr_open
+id: component.accordion.field_attr_open
+field_name: field_attr_open
+entity_type: component
+bundle: accordion
+label: 'Expanded by default?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'true'
+  off_label: 'false'
+field_type: boolean

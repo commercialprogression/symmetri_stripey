@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: component.teaser
+label: Teaser
+targetEntityType: component
+cache: true

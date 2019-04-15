@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.media
+    - field.storage.component.field_media
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
+id: component.media.field_media
+field_name: field_media
+entity_type: component
+bundle: media
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: special.field_style_inline
+field_name: field_style_inline
+entity_type: special
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

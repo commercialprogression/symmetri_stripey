@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.row
+    - field.field.section.row.field_columns
+    - field.field.section.row.field_style_flexdirection
+    - field.field.section.row.field_style_justify
+    - field.field.section.row.field_style_unpad
+id: section.row.default
+targetEntityType: section
+bundle: row
+mode: default
+content:
+  field_columns:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_flexdirection: true
+  field_style_justify: true
+  field_style_unpad: true
+  uid: true

@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: section.field_style_accent_color
+field_name: field_style_accent_color
+entity_type: section
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: child-color--black
+      label: Black
+    -
+      value: child-color--darkblue
+      label: 'Dark blue'
+    -
+      value: child-color--darkteal
+      label: 'Dark teal'
+    -
+      value: child-color--lightblue
+      label: 'Light blue'
+    -
+      value: child-color--lightgray
+      label: 'Light gray'
+    -
+      value: child-color--lightteal
+      label: 'Light teal'
+    -
+      value: child-color--mediumgray
+      label: 'Medium gray'
+    -
+      value: child-color--mediumteal
+      label: 'Medium teal'
+    -
+      value: child-color--orange
+      label: Orange
+    -
+      value: child-color--scarlet
+      label: Scarlet
+    -
+      value: child-color--superlightgray
+      label: 'Super light gray'
+    -
+      value: child-color--white
+      label: White
+    -
+      value: child-color--yellow
+      label: Yellow
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

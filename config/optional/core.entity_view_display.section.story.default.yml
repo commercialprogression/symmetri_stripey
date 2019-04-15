@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.story
+    - field.field.section.story.field_customer_job_title
+    - field.field.section.story.field_customer_name
+    - field.field.section.story.field_longtext
+    - field.field.section.story.field_style_unpad
+  module:
+    - text
+id: section.story.default
+targetEntityType: section
+bundle: story
+mode: default
+content:
+  field_customer_job_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_customer_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_longtext:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_unpad: true
+  uid: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.row
+    - field.storage.section.field_style_justify
+  module:
+    - options
+id: section.row.field_style_justify
+field_name: field_style_justify
+entity_type: section
+bundle: row
+label: 'Column spacing'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: justify-content--center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

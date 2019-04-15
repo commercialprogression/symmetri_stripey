@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Accordion
+type: accordion
+description: 'An expandable content area, for showing additional information while saving space.'

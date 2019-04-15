@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.stripe
+    - field.storage.section.field_style_bgpx
+  module:
+    - options
+id: section.stripe.field_style_bgpx
+field_name: field_style_bgpx
+entity_type: section
+bundle: stripe
+label: 'Background horizontal alignment'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: background-position-x--center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

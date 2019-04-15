@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: component.field_special
+field_name: field_special
+entity_type: component
+type: entity_reference
+settings:
+  target_type: special
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

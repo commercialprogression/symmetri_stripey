@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.special.form
+    - field.field.special.form.field_form
+    - field.field.special.form.field_style_inline
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+    group_content:
+      children:
+        - field_form
+      parent_name: group_admin
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: false
+      label: Content
+    group_settings:
+      children:
+        - field_style_inline
+      parent_name: group_admin
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Settings
+id: special.form.default
+targetEntityType: special
+bundle: form
+mode: default
+content:
+  field_form:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_inline:
+    weight: 22
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  uid: true

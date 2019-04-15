@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.heading
+    - field.storage.component.field_style_logo
+  module:
+    - options
+id: component.heading.field_style_logo
+field_name: field_style_logo
+entity_type: component
+bundle: heading
+label: 'Associated Product'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

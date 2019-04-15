@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: viewport
+label: Viewport
+effects:
+  f33d9744-f6f1-4579-9fa1-6b5eb3ffe75d:
+    uuid: f33d9744-f6f1-4579-9fa1-6b5eb3ffe75d
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

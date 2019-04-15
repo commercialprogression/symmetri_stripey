@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: section.field_longtext
+field_name: field_longtext
+entity_type: section
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

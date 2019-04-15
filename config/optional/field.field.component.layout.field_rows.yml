@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.layout
+    - eck.eck_type.section.row
+    - field.storage.component.field_rows
+id: component.layout.field_rows
+field_name: field_rows
+entity_type: component
+bundle: layout
+label: Rows
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:section'
+  handler_settings:
+    target_bundles:
+      row: row
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

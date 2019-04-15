@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.blockquote
+    - field.storage.component.field_style_quoteclose
+id: component.blockquote.field_style_quoteclose
+field_name: field_style_quoteclose
+entity_type: component
+bundle: blockquote
+label: 'Closing quotation mark'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: blockquote--closing-include
+  off_label: blockquote--closing-exclude
+field_type: boolean

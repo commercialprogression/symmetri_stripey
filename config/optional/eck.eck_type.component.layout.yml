@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Layout
+type: layout
+description: 'A way to put content into rows and columns. Optionally make each row a carousel slide, etc.'

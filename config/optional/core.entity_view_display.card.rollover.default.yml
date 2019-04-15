@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.card.rollover
+    - field.field.card.rollover.field_components
+    - field.field.card.rollover.field_components_hover
+id: card.rollover.default
+targetEntityType: card
+bundle: rollover
+mode: default
+content:
+  field_components:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_components_hover:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  changed: true
+  created: true
+  title: true
+  uid: true

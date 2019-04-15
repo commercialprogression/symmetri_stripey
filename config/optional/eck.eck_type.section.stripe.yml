@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.section
+name: Stripe
+type: stripe
+description: 'A main section of the page (as opposed to other sectioned content, which are parts of complex layouts).'

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Link(s)
+type: link
+description: 'One or more links, optionally set to appear as call-to-action buttons.'

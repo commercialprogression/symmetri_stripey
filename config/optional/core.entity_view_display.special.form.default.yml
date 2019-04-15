@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.special.form
+    - field.field.special.form.field_form
+    - field.field.special.form.field_style_inline
+id: special.form.default
+targetEntityType: special
+bundle: form
+mode: default
+content:
+  field_form:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_inline: true
+  uid: true

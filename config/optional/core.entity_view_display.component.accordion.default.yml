@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.accordion
+    - field.field.component.accordion.field_attr_open
+    - field.field.component.accordion.field_longtext
+    - field.field.component.accordion.field_text
+  module:
+    - text
+id: component.accordion.default
+targetEntityType: component
+bundle: accordion
+mode: default
+content:
+  field_longtext:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_attr_open: true
+  uid: true

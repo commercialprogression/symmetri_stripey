@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.attachment.seo
+    - field.storage.attachment.field_seo_rel_nofollow
+id: attachment.seo.field_seo_rel_nofollow
+field_name: field_seo_rel_nofollow
+entity_type: attachment
+bundle: seo
+label: nofollow
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: nofollow
+  off_label: follow
+field_type: boolean

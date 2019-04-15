@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: component.field_style_vspx
+field_name: field_style_vspx
+entity_type: component
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: vertical-spacing-1
+      label: 1x
+    -
+      value: vertical-spacing-2
+      label: 2x
+    -
+      value: vertical-spacing-4
+      label: 4x
+    -
+      value: vertical-spacing-8
+      label: 8x
+    -
+      value: vertical-spacing-16
+      label: 16x
+    -
+      value: vertical-spacing-32
+      label: 32x
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.media
+    - field.field.component.media.field_link
+    - field.field.component.media.field_longtext
+    - field.field.component.media.field_media
+    - field.field.component.media.field_style_encroach
+    - field.field.component.media.field_style_float
+  module:
+    - linked_field
+    - text
+id: component.media.default
+targetEntityType: component
+bundle: media
+mode: default
+content:
+  field_longtext:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_link
+        advanced: {  }
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_link: true
+  field_style_encroach: true
+  field_style_float: true
+  uid: true

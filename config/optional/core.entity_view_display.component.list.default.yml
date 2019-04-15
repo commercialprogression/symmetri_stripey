@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.list
+    - field.field.component.list.field_longtext_multiple
+    - field.field.component.list.field_style_checkmarks
+  module:
+    - text
+id: component.list.default
+targetEntityType: component
+bundle: list
+mode: default
+content:
+  field_longtext_multiple:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_checkmarks: true
+  uid: true

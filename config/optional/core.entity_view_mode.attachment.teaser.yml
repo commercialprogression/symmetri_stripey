@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: attachment.teaser
+label: Teaser
+targetEntityType: attachment
+cache: true

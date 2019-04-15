@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.stripe
+    - field.storage.section.field_style_color
+  module:
+    - options
+id: section.stripe.field_style_color
+field_name: field_style_color
+entity_type: section
+bundle: stripe
+label: 'Text color'
+description: 'The color of most of the text. If you set this to Light/white, please set the background color to something dark, so the text will still appear even if the background image doesn''t load.'
+required: false
+translatable: false
+default_value:
+  -
+    value: color--inherit
+default_value_callback: ''
+settings: {  }
+field_type: list_string

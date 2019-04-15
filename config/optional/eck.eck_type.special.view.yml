@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.special
+name: View
+type: view
+description: 'Add a listing display of content'

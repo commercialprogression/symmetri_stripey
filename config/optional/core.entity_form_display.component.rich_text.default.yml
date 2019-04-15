@@ -1,0 +1,96 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.rich_text
+    - field.field.component.rich_text.field_longtext
+    - field.field.component.rich_text.field_style_color
+    - field.field.component.rich_text.field_style_fontweight
+    - field.field.component.rich_text.field_style_paragraph
+    - field.field.component.rich_text.field_style_text_transform
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+    group_content:
+      children:
+        - field_longtext
+      parent_name: group_admin
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: false
+      label: Content
+    group_settings:
+      children:
+        - field_style_fontweight
+        - field_style_paragraph
+        - field_style_color
+        - field_style_text_transform
+      parent_name: group_admin
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Settings
+id: component.rich_text.default
+targetEntityType: component
+bundle: rich_text
+mode: default
+content:
+  field_longtext:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_style_color:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_fontweight:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_paragraph:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_style_text_transform:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.media
+    - field.storage.component.field_style_encroach
+id: component.media.field_style_encroach
+field_name: field_style_encroach
+entity_type: component
+bundle: media
+label: 'Encroach on neighbor section'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: compro-globalStyling--encroach
+  off_label: compro-globalStyling--decroach
+field_type: boolean

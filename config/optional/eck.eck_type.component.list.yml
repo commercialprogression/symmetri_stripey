@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: List
+type: list
+description: 'Sections of text, optionally set with checkmarks instead of bullets.'

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.layout
+    - field.storage.component.field_style_slick
+id: component.layout.field_style_slick
+field_name: field_style_slick
+entity_type: component
+bundle: layout
+label: 'Each row as a slideshow?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: compro-slick
+  off_label: compro-slick-off
+field_type: boolean

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.column
+    - field.storage.section.field_style_unpad
+id: section.column.field_style_unpad
+field_name: field_style_unpad
+entity_type: section
+bundle: column
+label: Unpad
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: padding--0
+  off_label: padding--inherit
+field_type: boolean

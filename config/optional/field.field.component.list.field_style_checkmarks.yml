@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.list
+    - field.storage.component.field_style_checkmarks
+id: component.list.field_style_checkmarks
+field_name: field_style_checkmarks
+entity_type: component
+bundle: list
+label: Checkmarks
+description: 'Render the list ''bullets'' as checkmark icons.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: list-style-type--fa-check-circle
+  off_label: list-style-type--disc
+field_type: boolean

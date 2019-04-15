@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.attachment.seo
+    - field.storage.attachment.field_seo_news_keywords
+id: attachment.seo.field_seo_news_keywords
+field_name: field_seo_news_keywords
+entity_type: attachment
+bundle: seo
+label: 'News Keywords'
+description: 'A comma-separated list of keywords about the page. This meta tag is used as an indicator in Google News.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

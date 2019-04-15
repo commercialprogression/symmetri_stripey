@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.row
+    - field.storage.section.field_style_flexdirection
+id: section.row.field_style_flexdirection
+field_name: field_style_flexdirection
+entity_type: section
+bundle: row
+label: Reversed
+description: 'By default, the top column in the list on the edit screen will be the leftmost column on the view screen. Clicking this checkbox reverses the display order. This is most useful if you want to show alternating rows on desktop, but to preserve order on mobile.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: flex-direction--row-reverse
+  off_label: flex-direction--row
+field_type: boolean

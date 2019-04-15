@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.special.form
+    - field.storage.special.field_style_inline
+id: special.form.field_style_inline
+field_name: field_style_inline
+entity_type: special
+bundle: form
+label: Inline
+description: 'Whether to show form items in a row (for small forms). Keep unchecked for default forms with breathing room between fields.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: form--inline
+  off_label: form--block
+field_type: boolean

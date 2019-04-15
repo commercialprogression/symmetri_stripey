@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.heading
+    - field.storage.component.field_style_text_transform
+  module:
+    - options
+id: component.heading.field_style_text_transform
+field_name: field_style_text_transform
+entity_type: component
+bundle: heading
+label: 'Text Transform'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

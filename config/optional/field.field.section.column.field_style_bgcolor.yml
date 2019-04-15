@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.column
+    - field.storage.section.field_style_bgcolor
+  module:
+    - options
+id: section.column.field_style_bgcolor
+field_name: field_style_bgcolor
+entity_type: section
+bundle: column
+label: 'Background color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

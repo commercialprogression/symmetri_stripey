@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.column
+    - field.storage.section.field_style_animate
+id: section.column.field_style_animate
+field_name: field_style_animate
+entity_type: section
+bundle: column
+label: Animate
+description: 'When a user scrolls or otherwise reveals this item, enabling this checkbox toggles it to reveal using an <a href="https://daneden.github.io/animate.css/" target="_blank">animation</a>.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: revealOnScroll
+  off_label: doNotRevealOnScroll
+field_type: boolean

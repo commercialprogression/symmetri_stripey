@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.column
+    - field.storage.section.field_style_bgpy
+  module:
+    - options
+id: section.column.field_style_bgpy
+field_name: field_style_bgpy
+entity_type: section
+bundle: column
+label: 'Background vertical alignment'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: background-position-y--center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

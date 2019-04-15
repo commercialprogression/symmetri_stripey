@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: component.field_style_logo
+field_name: field_style_logo
+entity_type: component
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: logo--valence
+      label: 'Valence (5.2)'
+    -
+      value: logo--universal
+      label: Universal
+    -
+      value: logo--nitro
+      label: Nitro
+    -
+      value: logo--source-editor
+      label: 'Source Editor'
+    -
+      value: logo--autocode
+      label: Autocode
+    -
+      value: logo--file-editor
+      label: 'File Editor'
+    -
+      value: logo--iadmin
+      label: iAdmin
+    -
+      value: logo--query-runner
+      label: 'Query Runner'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

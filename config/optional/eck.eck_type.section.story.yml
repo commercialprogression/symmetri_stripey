@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.section
+name: Story
+type: story
+description: 'A custom story that stands alone. Intended for use in case studies.'

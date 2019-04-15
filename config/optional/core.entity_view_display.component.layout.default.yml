@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.layout
+    - field.field.component.layout.field_rows
+    - field.field.component.layout.field_style_slick
+id: component.layout.default
+targetEntityType: component
+bundle: layout
+mode: default
+content:
+  field_rows:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_slick: true
+  uid: true

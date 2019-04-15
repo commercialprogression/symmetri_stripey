@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.attachment.seo
+    - field.field.attachment.seo.field_seo_description
+    - field.field.attachment.seo.field_seo_image
+    - field.field.attachment.seo.field_seo_news_keywords
+    - field.field.attachment.seo.field_seo_rel_nofollow
+    - field.field.attachment.seo.field_seo_rel_noindex
+    - field.field.attachment.seo.field_seo_title
+    - image.style.thumbnail
+  module:
+    - image
+id: attachment.seo.default
+targetEntityType: attachment
+bundle: seo
+mode: default
+content:
+  field_seo_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_seo_image:
+    weight: 3
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_seo_news_keywords:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_seo_rel_nofollow:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_seo_rel_noindex:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_seo_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

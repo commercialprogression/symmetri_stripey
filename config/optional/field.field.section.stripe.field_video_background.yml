@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.stripe
+    - field.storage.section.field_video_background
+  module:
+    - file
+id: section.stripe.field_video_background
+field_name: field_video_background
+entity_type: section
+bundle: stripe
+label: 'Background video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: bgvideo
+  file_extensions: 'mov mp4 ogv ogg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

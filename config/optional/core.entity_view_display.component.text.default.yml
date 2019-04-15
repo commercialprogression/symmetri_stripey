@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.text
+    - field.field.component.text.field_style_color
+    - field.field.component.text.field_style_fontweight
+    - field.field.component.text.field_style_text_transform
+    - field.field.component.text.field_text
+id: component.text.default
+targetEntityType: component
+bundle: text
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_color: true
+  field_style_fontweight: true
+  field_style_text_transform: true
+  uid: true

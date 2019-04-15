@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: component.field_style_color
+field_name: field_style_color
+entity_type: component
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: color--black
+      label: Black
+    -
+      value: color--darkblue
+      label: 'Dark blue'
+    -
+      value: color--darkteal
+      label: 'Dark teal'
+    -
+      value: color--lightblue
+      label: 'Light blue'
+    -
+      value: color--lightgray
+      label: 'Light gray'
+    -
+      value: color--lightteal
+      label: 'Light teal'
+    -
+      value: color--mediumgray
+      label: 'Medium gray'
+    -
+      value: color--mediumteal
+      label: 'Medium teal'
+    -
+      value: color--orange
+      label: Orange
+    -
+      value: color--superlightgray
+      label: 'Super light gray'
+    -
+      value: color--white
+      label: White
+    -
+      value: color--yellow
+      label: Yellow
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

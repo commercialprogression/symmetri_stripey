@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.spacer
+    - field.storage.component.field_style_vspx
+  module:
+    - options
+id: component.spacer.field_style_vspx
+field_name: field_style_vspx
+entity_type: component
+bundle: spacer
+label: 'Spacing size'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: vertical-spacing-4
+default_value_callback: ''
+settings: {  }
+field_type: list_string

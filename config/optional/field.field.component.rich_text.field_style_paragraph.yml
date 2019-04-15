@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.rich_text
+    - field.storage.component.field_style_paragraph
+  module:
+    - options
+id: component.rich_text.field_style_paragraph
+field_name: field_style_paragraph
+entity_type: component
+bundle: rich_text
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

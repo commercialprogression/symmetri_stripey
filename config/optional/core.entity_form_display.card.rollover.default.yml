@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.card.rollover
+    - field.field.card.rollover.field_components
+    - field.field.card.rollover.field_components_hover
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_admin:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Admin
+    group_content:
+      children:
+        - field_components
+        - field_components_hover
+      parent_name: group_admin
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: false
+      label: Content
+    group_settings:
+      children: {  }
+      parent_name: group_admin
+      weight: 4
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Settings
+id: card.rollover.default
+targetEntityType: card
+bundle: rollover
+mode: default
+content:
+  field_components:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Component
+      label_plural: Components
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_components_hover:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Component
+      label_plural: Components
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  title: true
+  uid: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.link
+    - field.storage.component.field_style_button
+id: component.link.field_style_button
+field_name: field_style_button
+entity_type: component
+bundle: link
+label: 'Show links as buttons'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: child-links--as-buttons
+  off_label: child-links--regular
+field_type: boolean

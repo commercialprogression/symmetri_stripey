@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: section.field_style_bgcolor
+field_name: field_style_bgcolor
+entity_type: section
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: background-color--black
+      label: Black
+    -
+      value: background-color--darkblue
+      label: 'Dark blue'
+    -
+      value: background-color--darkteal
+      label: 'Dark teal'
+    -
+      value: background-color--lightblue
+      label: 'Light blue'
+    -
+      value: background-color--lightgray
+      label: 'Light gray'
+    -
+      value: background-color--lightteal
+      label: 'Light teal'
+    -
+      value: background-color--mediumgray
+      label: 'Medium gray'
+    -
+      value: background-color--mediumteal
+      label: 'Medium teal'
+    -
+      value: background-color--orange
+      label: Orange
+    -
+      value: background-color--superlightgray
+      label: 'Super light gray'
+    -
+      value: background-color--white
+      label: White
+    -
+      value: background-color--yellow
+      label: Yellow
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

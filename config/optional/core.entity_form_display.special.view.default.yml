@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.special.view
+    - field.field.special.view.field_view
+  module:
+    - viewsreference
+id: special.view.default
+targetEntityType: special
+bundle: view
+mode: default
+content:
+  field_view:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+hidden:
+  created: true
+  uid: true

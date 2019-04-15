@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.cards
+    - field.field.component.cards.field_cards
+id: component.cards.default
+targetEntityType: component
+bundle: cards
+mode: default
+content:
+  field_cards:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  changed: true
+  created: true
+  uid: true

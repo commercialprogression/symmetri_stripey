@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.card.rollover
+    - eck.eck_type.component.accordion
+    - eck.eck_type.component.blockquote
+    - eck.eck_type.component.cards
+    - eck.eck_type.component.heading
+    - eck.eck_type.component.layout
+    - eck.eck_type.component.link
+    - eck.eck_type.component.list
+    - eck.eck_type.component.media
+    - eck.eck_type.component.rich_text
+    - eck.eck_type.component.spacer
+    - eck.eck_type.component.special
+    - eck.eck_type.component.text
+    - field.storage.card.field_components
+id: card.rollover.field_components
+field_name: field_components
+entity_type: card
+bundle: rollover
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:component'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+      blockquote: blockquote
+      cards: cards
+      heading: heading
+      layout: layout
+      link: link
+      list: list
+      media: media
+      rich_text: rich_text
+      spacer: spacer
+      special: special
+      text: text
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: accordion
+field_type: entity_reference

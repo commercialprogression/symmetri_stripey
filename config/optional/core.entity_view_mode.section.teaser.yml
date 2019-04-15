@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: section.teaser
+label: Teaser
+targetEntityType: section
+cache: true

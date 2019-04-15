@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.column
+    - field.storage.section.field_style_bgrepeat
+  module:
+    - options
+id: section.column.field_style_bgrepeat
+field_name: field_style_bgrepeat
+entity_type: section
+bundle: column
+label: 'Background repeat'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: background-repeat--no-repeat
+default_value_callback: ''
+settings: {  }
+field_type: list_string

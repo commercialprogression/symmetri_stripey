@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.link
+    - field.field.component.link.field_link
+    - field.field.component.link.field_style_button
+  module:
+    - link
+id: component.link.default
+targetEntityType: component
+bundle: link
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_style_button: true
+  uid: true

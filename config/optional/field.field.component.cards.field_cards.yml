@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.card.rollover
+    - eck.eck_type.card.standard
+    - eck.eck_type.component.cards
+    - field.storage.component.field_cards
+id: component.cards.field_cards
+field_name: field_cards
+entity_type: component
+bundle: cards
+label: Cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:card'
+  handler_settings:
+    target_bundles:
+      standard: standard
+      rollover: rollover
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: standard
+field_type: entity_reference

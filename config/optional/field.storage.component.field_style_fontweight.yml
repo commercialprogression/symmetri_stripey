@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: component.field_style_fontweight
+field_name: field_style_fontweight
+entity_type: component
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: font-weight--300
+      label: Light
+    -
+      value: font-weight--400
+      label: Regular
+    -
+      value: font-weight--500
+      label: Semi-bold
+    -
+      value: font-weight--600
+      label: Bold
+    -
+      value: font-weight--700
+      label: Black
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

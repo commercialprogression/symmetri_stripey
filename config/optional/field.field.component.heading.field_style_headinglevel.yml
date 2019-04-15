@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.heading
+    - field.storage.component.field_style_headinglevel
+  module:
+    - options
+id: component.heading.field_style_headinglevel
+field_name: field_style_headinglevel
+entity_type: component
+bundle: heading
+label: Size
+description: 'Override the size to match a different heading level. Only use sparingly.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

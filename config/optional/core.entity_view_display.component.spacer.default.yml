@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.component.spacer
+    - field.field.component.spacer.field_style_vspx
+id: component.spacer.default
+targetEntityType: component
+bundle: spacer
+mode: default
+content: {  }
+hidden:
+  changed: true
+  created: true
+  field_style_vspx: true
+  uid: true

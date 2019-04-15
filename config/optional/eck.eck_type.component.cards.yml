@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.component
+name: Cards
+type: cards
+description: 'One or more brief pieces of content that can be displayed and laid out fancifully'

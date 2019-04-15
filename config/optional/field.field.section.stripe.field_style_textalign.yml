@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.section.stripe
+    - field.storage.section.field_style_textalign
+  module:
+    - options
+id: section.stripe.field_style_textalign
+field_name: field_style_textalign
+entity_type: section
+bundle: stripe
+label: 'Text alignment'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: text-align--center
+default_value_callback: ''
+settings: {  }
+field_type: list_string
